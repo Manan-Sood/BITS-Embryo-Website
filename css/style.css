@@ -14,7 +14,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
-h2 {
+h2, h3 {
   color: #000;
   font-weight: 600;
 }
@@ -64,6 +64,11 @@ p {
 span {
   letter-spacing: 1px;
 }
+
+.tohide, .tohide2, .tohide3 {
+  display: none;
+}
+
 
 .img-fluid {
   height: 150px;
@@ -751,6 +756,69 @@ body.mobile-nav-active #mobile-nav-toggle i {
   color: #71c55d;
   text-decoration: none;
 }
+
+
+/* panel Section
+--------------------------------*/
+#panel {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+
+#panel .feature-block {
+  background: #fff none repeat scroll 0 0;
+  padding: 30px 20px;
+  margin-bottom: 30px;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+#panel .feature-block:hover {
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease-in-out 0s;
+}
+
+#panel .feature-block h4 {
+  margin-bottom: 20px;
+}
+
+#panel .feature-block p {
+  margin-bottom: 0;
+}
+#panel .btn-get-started {
+  font-family: "Philosopher", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 11px 36px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin-bottom: 30px;
+  border: 2px solid #71c55d;
+  background: #fff;
+  color: #71c55d;
+  text-decoration: none;
+}
+ .btn-get-started {
+  font-family: "Philosopher", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 11px 36px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin-bottom: 30px;
+  border: 2px solid #71c55d;
+  background: #fff;
+  color: #71c55d;
+  text-decoration: none;
+}
+
+
 /* Screenshots Section
 --------------------------------*/
 .owl-dot.active > span {
@@ -916,7 +984,7 @@ body.mobile-nav-active #mobile-nav-toggle i {
 
 /* Team Section
 --------------------------------*/
-#team .team-block {
+#aic .team-block, #team .team-block {
   box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
   height: 254px;
   overflow: hidden;
@@ -925,17 +993,29 @@ body.mobile-nav-active #mobile-nav-toggle i {
   padding-bottom: 5px;
 }
 
+#aic .team-block {
+  width: 78%;
+  height: 80%;
+  box-shadow: none;
+
+}
 @media (max-width: 991px) {
-  #team .team-block {
+  #aic .team-block, #team .team-block {
     margin-bottom: 30px;
+  
   }
+  
 }
 
 #team .team-block img {
   width: 100%;
 }
+#aic .team-block img {
+  height: 100%;
+  width: 100%;
+}
 
-#team .team-block .team-content {
+#aic .team-block .team-content, #team .team-block .team-content {
   background: #fff none repeat scroll 0 0;
   bottom: 0;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.19);
@@ -944,6 +1024,17 @@ body.mobile-nav-active #mobile-nav-toggle i {
   position: absolute;
   width: 100%;
   transition: all 0.5s ease-in-out 0s;
+}
+#aic .team-block .team-content {
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: none;
+}
+#panel .feature-block .fa, #features .feature-block .fa {
+  color: #626262;
+}
+#panel .feature-block .fa:hover, #features .feature-block .fa:hover {
+  color: #71c55d;
 }
 
 #team .team-block .team-content ul {
@@ -979,7 +1070,7 @@ body.mobile-nav-active #mobile-nav-toggle i {
   text-transform: uppercase;
 }
 
-#team .team-block:hover .team-content {
+#team .team-block:hover .team-content, #aic .team-block:hover .team-content {
   bottom: 0px;
   transition: all 0.5s ease-in-out 0s;
 }
@@ -1080,6 +1171,22 @@ body.mobile-nav-active #mobile-nav-toggle i {
   padding: 30px 15px;
   max-width: 100%;
   width: 100%;
+}
+#aic .feature-block {
+  background: #fff none repeat scroll 0 0;
+  padding: 30px 20px;
+  margin-bottom: 30px;
+  position: inline;
+  text-align: center;
+}
+
+#aic .feature-block:hover {
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease-in-out 0s;
+}
+
+#aic .feature-block p {
+  margin-bottom: 0;
 }
 
 #pricing .block-pricing .table h4 {

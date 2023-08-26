@@ -11,6 +11,7 @@ jQuery(document).ready(function( $ ) {
 
   });
 
+
   // Back to top button
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
@@ -114,7 +115,7 @@ jQuery(document).ready(function( $ ) {
 
   // Init Owl Carousel
   $('.owl-carousel').owlCarousel({
-    items: 4,
+    items: 6,
     autoplay: true,
     loop: true,
     margin: 30,
@@ -124,13 +125,80 @@ jQuery(document).ready(function( $ ) {
 
       320: { items: 1},
       480: { items: 2},
-      600: { items: 2},
-      767: { items: 3},
-      768: { items: 3},
-      992: { items: 4}
+      600: { items: 3},
+      767: { items: 4},
+      768: { items: 5},
+      992: { items: 6}
     }
   });
 
 // custom code
 
 });
+
+//view more button
+function viewmore() {
+  var divs = document.getElementsByClassName("tohide");
+  var btn = document.getElementById("view-more-btn");
+  var div = divs[i];
+  var i=0;
+  for(i=0; i<divs.length;i++) {
+    var div = divs[i];
+    if(div.style.display === "block"){
+    div.style.display = "none"; 
+    }
+    else {
+      div.style.display = "block"
+    }
+  }
+  if (div.style.display === "none"){
+    btn.innerText = "View More";
+  }
+  else {
+    btn.innerText = "View Less";
+    window.location = "/index.html#features" }
+}
+
+function viewmore2() {
+  var divs = document.getElementsByClassName("tohide2");
+  var btn = document.getElementById("view-more-btn2");
+  var div = divs[i];
+  var i=0;
+  for(i=0; i<divs.length;i++) {
+    var div = divs[i];
+    if(div.style.display === "block"){
+    div.style.display = "none"; 
+    }
+    else {
+      div.style.display = "block"
+    }
+  }
+  if (div.style.display === "none"){
+    btn.innerText = "View More";
+  }
+  else {
+    btn.innerText = "View Less";
+    window.location = "/index.html#features" }
+}
+
+function viewmore3() {
+  var divs = document.getElementsByClassName("tohide3");
+  var btn = document.getElementById("view-more-btn3");
+  var div = divs[i];
+  var i=0;
+  for(i=0; i<divs.length;i++) {
+    var div = divs[i];
+    if(div.style.display === "block"){
+    div.style.display = "none"; 
+    }
+    else {
+      div.style.display = "block"
+    }
+  }
+  if (div.style.display === "none"){
+    btn.innerText = "View More";
+  }
+  else {
+    btn.innerText = "View Less";
+    window.location = "/index.html#features" }
+}
